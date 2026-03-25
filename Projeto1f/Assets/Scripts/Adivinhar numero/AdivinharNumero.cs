@@ -5,13 +5,14 @@ using UnityEngine.InputSystem;
 public class AdivinharNumero : MonoBehaviour
 {
     [SerializeField] private int numero;
+    private int tentativasLimite;
     private int tentativas;
     [SerializeField] private int dificuldade;
     [SerializeField] private int numeroAleatorio;
 
     void Start()
     {
-        tentativas = 3;
+        tentativasLimite = 3;
         SelecionaDificuldade();
     }
 
@@ -65,27 +66,29 @@ public class AdivinharNumero : MonoBehaviour
     }
     void PrintaNumero()
     {
-        if (Keyboard.current.eKey.wasPressedThisFrame && tentativas > 0)
+        if (Keyboard.current.eKey.wasPressedThisFrame && tentativasLimite > 0)
         {
+            tentativas++;
+            print("Você tentou " + tentativas + " vezes");
             print("Escolhi o numero: " + numero);
             if (numero < numeroAleatorio)
             {
                 print("O número que você escolheu é menor do que o número secreto");
-                tentativas -= 1;
-                print("Você tem: " + tentativas + " restantes");
+                tentativasLimite -= 1;
+                print("Você tem: " + tentativasLimite + " chutes restantes");
                 print("======================");
             }
             if (numero > numeroAleatorio)
             {
                 print("O número que você escolheu é maior do que o número secreto");
-                tentativas -= 1;
-                print("Você tem: " + tentativas + " restantes");
+                tentativasLimite -= 1;
+                print("Você tem: " + tentativasLimite + " chutes restantes");
                 print("======================");
             }
             if (numero == numeroAleatorio)
             {
                 print("Você acertou o número!");
-                tentativas = -1;
+                tentativasLimite = -1;
             }
         }
         else if (Keyboard.current.eKey.wasPressedThisFrame)print("Você não tem mais tentativas");
