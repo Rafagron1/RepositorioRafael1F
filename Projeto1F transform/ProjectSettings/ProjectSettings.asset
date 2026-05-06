@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 6e4f9c325e3001a48bf495fa1e5ad594
+  productGUID: 951bf51a31c031c47b972ea87cc3b978
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Projeto1f
+  productName: Projeto1F transform
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -731,14 +731,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Projeto1f
+  metroPackageName: Projeto1F transform
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Projeto1f
+  metroApplicationDescription: Projeto1F transform
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -809,10 +809,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 0251ea00-3516-4bf4-a74d-87b2a0d88fc2
+  cloudProjectId: 2f09b7c5-e766-4963-a048-683151509fa2
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Projeto1f
+  projectName: Projeto1F transform
   organizationId: rafagron2
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
